@@ -5,3 +5,13 @@ for(const params of ['?tag=armor&item=lotus_orb','?tag=invisibility-detection&it
 for(const filename of ['index.html','item-tree.html']){const content=fs.readFileSync('dist/'+filename,'utf8');for(const m of content.matchAll(/(?:src|href)="([^"?#]+)(?:[?#][^"]*)?"/g)){if(!m[1].includes(':')&&!fs.existsSync('dist/'+m[1]))throw Error('Broken local link '+m[1]);}}
 console.log('PASS: both pages share data/tags; basic landing, 81 filters, complete dependency closure, required-only states, hidden unrelated branches, quantities, alternatives, cycles, progressive expansion, search conflicts, query links, reset and local asset paths.');
 
+
+const regenCase=setup('?tag=mana-regeneration&item=oblivion_staff');
+const regenTree=regenCase.nodes['#tree-canvas'].innerHTML;
+const selectedCard=regenTree.split('<section class="selected-center">')[1].split('</section>')[0];
+if(!selectedCard.includes('+ 1.25 Mana Regeneration'))throw Error('Selected staff card must show mana regeneration');
+if(!regenTree.includes('+ 2.5 Mana Regeneration'))throw Error('Orchid upgrade must show mana regeneration beyond first two stats');
+if(fs.readFileSync('dist/atlas-style.css','utf8').includes('.upgrade-ingredients .node-stats{display:none}'))throw Error('Ingredient bonuses must not be hidden');
+if(!selectedCard.includes('<strong>+ 1.25 Mana Regeneration</strong>'))throw Error('Selected tag bonus must be bold');
+if(selectedCard.indexOf('Matches Mana Regeneration')<selectedCard.indexOf('node-stats'))throw Error('Match label must follow bonuses');
+
