@@ -1,0 +1,1 @@
+Dota2 Atlas: open index.html for statistics or item-tree.html for recipes. Keep all files in this folder together. The full tree is shown automatically. Item images require internet access. See the project README.md and DATA-AUDIT.md for source details.

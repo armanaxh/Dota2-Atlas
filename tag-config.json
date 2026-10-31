@@ -1,0 +1,666 @@
+{
+  "groups": [
+    {
+      "name": "Hero Attributes",
+      "color": "183,156,103",
+      "tags": [
+        {
+          "id": "strength",
+          "label": "Strength",
+          "description": "Adds strength; useful for attribute scaling and health-related benefits.",
+          "color": "183,156,103"
+        },
+        {
+          "id": "agility",
+          "label": "Agility",
+          "description": "Adds agility; useful for attribute scaling, armor and attack speed.",
+          "color": "183,156,103"
+        },
+        {
+          "id": "intelligence",
+          "label": "Intelligence",
+          "description": "Adds intelligence; useful for attribute scaling and mana-related benefits.",
+          "color": "183,156,103"
+        },
+        {
+          "id": "all-attributes",
+          "label": "All Attributes",
+          "description": "Adds strength, agility and intelligence together.",
+          "color": "183,156,103"
+        }
+      ]
+    },
+    {
+      "name": "Health & Sustain",
+      "color": "146,190,139",
+      "tags": [
+        {
+          "id": "max-hp",
+          "label": "Max HP",
+          "description": "Adds maximum health, increasing the damage the hero can survive.",
+          "color": "146,190,139"
+        },
+        {
+          "id": "hp-regeneration",
+          "label": "HP Regeneration",
+          "description": "Restores health over time; may be passive, temporary or provided by an aura.",
+          "color": "146,190,139"
+        },
+        {
+          "id": "instant-heal",
+          "label": "Instant Heal",
+          "description": "Restores health immediately through an active or triggered effect.",
+          "color": "146,190,139"
+        },
+        {
+          "id": "attack-lifesteal",
+          "label": "Attack Lifesteal",
+          "description": "Restores health from eligible attack damage.",
+          "color": "146,190,139"
+        },
+        {
+          "id": "spell-lifesteal",
+          "label": "Spell Lifesteal",
+          "description": "Restores health from eligible spell damage.",
+          "color": "146,190,139"
+        },
+        {
+          "id": "healing-amplification",
+          "label": "Healing Amplification",
+          "description": "Amplifies healing or health restoration; the supported healing types vary by item.",
+          "color": "146,190,139"
+        },
+        {
+          "id": "ally-healing",
+          "label": "Ally Healing",
+          "description": "Provides health recovery to allied units.",
+          "color": "146,190,139"
+        },
+        {
+          "id": "damage-barrier",
+          "label": "Damage Barrier",
+          "description": "Absorbs incoming damage up to a limit; includes physical, magical and all-damage barriers.",
+          "color": "146,190,139"
+        },
+        {
+          "id": "death-protection",
+          "label": "Death Protection",
+          "description": "Provides protection against death or a return to life under specified conditions.",
+          "color": "146,190,139"
+        }
+      ]
+    },
+    {
+      "name": "Mana & Resources",
+      "color": "133,176,218",
+      "tags": [
+        {
+          "id": "max-mana",
+          "label": "Max Mana",
+          "description": "Adds maximum mana for casting more abilities.",
+          "color": "133,176,218"
+        },
+        {
+          "id": "mana-regeneration",
+          "label": "Mana Regeneration",
+          "description": "Restores mana over time, through a listed bonus, aura or temporary effect.",
+          "color": "133,176,218"
+        },
+        {
+          "id": "instant-mana",
+          "label": "Instant Mana",
+          "description": "Restores or grants usable mana immediately; some effects are temporary.",
+          "color": "133,176,218"
+        },
+        {
+          "id": "ally-mana-restoration",
+          "label": "Ally Mana Restoration",
+          "description": "Restores mana to allied units.",
+          "color": "133,176,218"
+        },
+        {
+          "id": "mana-regen-amplification",
+          "label": "Mana Regen Amplification",
+          "description": "Amplifies mana regeneration from applicable sources.",
+          "color": "133,176,218"
+        },
+        {
+          "id": "mana-from-spell-damage-taken",
+          "label": "Mana from Spell Damage Taken",
+          "description": "Converts incoming enemy spell damage into mana.",
+          "color": "133,176,218"
+        }
+      ]
+    },
+    {
+      "name": "Physical Defence",
+      "color": "170,181,191",
+      "tags": [
+        {
+          "id": "armor",
+          "label": "Armor",
+          "description": "Adds armor, helping reduce incoming physical damage.",
+          "color": "170,181,191"
+        },
+        {
+          "id": "evasion",
+          "label": "Evasion",
+          "description": "Gives attacks a chance to miss; accuracy and true strike can bypass it.",
+          "color": "170,181,191"
+        },
+        {
+          "id": "attack-damage-block",
+          "label": "Attack Damage Block",
+          "description": "Blocks a fixed amount of eligible incoming attack damage.",
+          "color": "170,181,191"
+        },
+        {
+          "id": "physical-barrier",
+          "label": "Physical Barrier",
+          "description": "Absorbs physical damage up to a barrier limit.",
+          "color": "170,181,191"
+        },
+        {
+          "id": "ethereal-protection",
+          "label": "Ethereal Protection",
+          "description": "Grants ethereal form, protecting against physical damage while preventing attacks.",
+          "color": "170,181,191"
+        },
+        {
+          "id": "damage-reflection",
+          "label": "Damage Reflection",
+          "description": "Returns eligible incoming damage to its source.",
+          "color": "170,181,191"
+        }
+      ]
+    },
+    {
+      "name": "Magical & Disable Defence",
+      "color": "177,152,207",
+      "tags": [
+        {
+          "id": "magic-resistance",
+          "label": "Magic Resistance",
+          "description": "Reduces incoming magical damage.",
+          "color": "177,152,207"
+        },
+        {
+          "id": "magic-barrier",
+          "label": "Magic Barrier",
+          "description": "Absorbs magical damage up to a barrier limit.",
+          "color": "177,152,207"
+        },
+        {
+          "id": "enemy-spell-damage-reduction",
+          "label": "Enemy Spell Damage Reduction",
+          "description": "Debuffs enemies to reduce the spell damage they deal.",
+          "color": "177,152,207"
+        },
+        {
+          "id": "debuff-immunity",
+          "label": "Debuff Immunity",
+          "description": "Temporarily prevents many enemy debuffs from affecting the hero; some abilities pierce it.",
+          "color": "177,152,207"
+        },
+        {
+          "id": "status-resistance",
+          "label": "Status Resistance",
+          "description": "Shortens most affected debuffs; some effects ignore status resistance.",
+          "color": "177,152,207"
+        },
+        {
+          "id": "self-dispel",
+          "label": "Self Dispel",
+          "description": "Removes eligible negative debuffs from the user.",
+          "color": "177,152,207"
+        },
+        {
+          "id": "strong-self-dispel",
+          "label": "Strong Self Dispel",
+          "description": "Removes eligible negative debuffs, including effects requiring a strong dispel.",
+          "color": "177,152,207"
+        },
+        {
+          "id": "ally-dispel",
+          "label": "Ally Dispel",
+          "description": "Removes eligible negative debuffs from an ally.",
+          "color": "177,152,207"
+        },
+        {
+          "id": "spell-block",
+          "label": "Spell Block",
+          "description": "Blocks eligible targeted spells when the effect is available.",
+          "color": "177,152,207"
+        },
+        {
+          "id": "spell-reflection",
+          "label": "Spell Reflection",
+          "description": "Recasts eligible targeted spells at their caster; reflection alone does not block the original spell.",
+          "color": "177,152,207"
+        }
+      ]
+    },
+    {
+      "name": "Physical Offence",
+      "color": "207,145,140",
+      "tags": [
+        {
+          "id": "attack-damage",
+          "label": "Attack Damage",
+          "description": "Increases damage dealt by normal attacks; may include conditional bonuses.",
+          "color": "207,145,140"
+        },
+        {
+          "id": "attack-speed",
+          "label": "Attack Speed",
+          "description": "Increases attack frequency through a bonus or temporary effect.",
+          "color": "207,145,140"
+        },
+        {
+          "id": "critical-strike",
+          "label": "Critical Strike",
+          "description": "Gives eligible attacks a chance to deal increased damage.",
+          "color": "207,145,140"
+        },
+        {
+          "id": "armor-reduction",
+          "label": "Armor Reduction",
+          "description": "Reduces enemy armor, increasing physical damage taken.",
+          "color": "207,145,140"
+        },
+        {
+          "id": "true-strike-accuracy",
+          "label": "True Strike / Accuracy",
+          "description": "Helps attacks bypass evasion. Accuracy is a chance; true strike guarantees a hit only for the attacks covered by the effect.",
+          "color": "207,145,140"
+        },
+        {
+          "id": "attack-range",
+          "label": "Attack Range",
+          "description": "Extends attack reach; melee, ranged or temporary restrictions may apply.",
+          "color": "207,145,140"
+        },
+        {
+          "id": "cleave",
+          "label": "Cleave",
+          "description": "Spreads eligible melee attack damage to enemies behind the target.",
+          "color": "207,145,140"
+        },
+        {
+          "id": "multi-target-attack-damage",
+          "label": "Multi-Target Attack Damage",
+          "description": "Damages additional targets through extra attacks, cleave or attack-triggered effects.",
+          "color": "207,145,140"
+        },
+        {
+          "id": "building-damage",
+          "label": "Building Damage",
+          "description": "Provides an effect explicitly supporting damage against buildings.",
+          "color": "207,145,140"
+        }
+      ]
+    },
+    {
+      "name": "Magical & Spell Offence",
+      "color": "174,153,216",
+      "tags": [
+        {
+          "id": "spell-amplification",
+          "label": "Spell Amplification",
+          "description": "Increases spell damage through amplification.",
+          "color": "174,153,216"
+        },
+        {
+          "id": "instant-spell-damage",
+          "label": "Instant Spell Damage",
+          "description": "Deals a burst of magical damage through an item effect.",
+          "color": "174,153,216"
+        },
+        {
+          "id": "aoe-spell-damage",
+          "label": "AoE Spell Damage",
+          "description": "Deals magical damage to multiple enemies in an area.",
+          "color": "174,153,216"
+        },
+        {
+          "id": "magic-resistance-reduction",
+          "label": "Magic Resistance Reduction",
+          "description": "Lowers enemy magic resistance, increasing magical damage taken.",
+          "color": "174,153,216"
+        },
+        {
+          "id": "cast-range",
+          "label": "Cast Range",
+          "description": "Extends the distance from which eligible spells or items can be cast.",
+          "color": "174,153,216"
+        },
+        {
+          "id": "cooldown-reduction",
+          "label": "Cooldown Reduction",
+          "description": "Reduces eligible ability or item cooldowns.",
+          "color": "174,153,216"
+        },
+        {
+          "id": "cooldown-reset",
+          "label": "Cooldown Reset",
+          "description": "Resets eligible ability cooldowns when activated.",
+          "color": "174,153,216"
+        }
+      ]
+    },
+    {
+      "name": "Mobility & Positioning",
+      "color": "130,188,199",
+      "tags": [
+        {
+          "id": "movement-speed",
+          "label": "Movement Speed",
+          "description": "Increases movement speed, permanently or under specified conditions.",
+          "color": "130,188,199"
+        },
+        {
+          "id": "blink",
+          "label": "Blink",
+          "description": "Teleports the user a short distance, with item-specific restrictions.",
+          "color": "130,188,199"
+        },
+        {
+          "id": "self-forced-movement",
+          "label": "Self Forced Movement",
+          "description": "Pushes or pulls the user without normal movement.",
+          "color": "130,188,199"
+        },
+        {
+          "id": "ally-forced-movement",
+          "label": "Ally Forced Movement",
+          "description": "Repositions an allied unit through forced movement.",
+          "color": "130,188,199"
+        },
+        {
+          "id": "enemy-forced-movement",
+          "label": "Enemy Forced Movement",
+          "description": "Pushes or pulls an enemy unit.",
+          "color": "130,188,199"
+        },
+        {
+          "id": "map-teleportation",
+          "label": "Map Teleportation",
+          "description": "Teleports across the map to valid allied destinations.",
+          "color": "130,188,199"
+        },
+        {
+          "id": "invisibility",
+          "label": "Invisibility",
+          "description": "Conceals the user or an ally; detection and break conditions vary.",
+          "color": "130,188,199"
+        },
+        {
+          "id": "slow-resistance",
+          "label": "Slow Resistance",
+          "description": "Reduces the strength of movement-speed slows.",
+          "color": "130,188,199"
+        }
+      ]
+    },
+    {
+      "name": "Enemy Control & Disruption",
+      "color": "208,166,123",
+      "tags": [
+        {
+          "id": "stun",
+          "label": "Stun",
+          "description": "Temporarily prevents a target from moving or acting.",
+          "color": "208,166,123"
+        },
+        {
+          "id": "silence",
+          "label": "Silence",
+          "description": "Prevents a target from casting most spells for a duration.",
+          "color": "208,166,123"
+        },
+        {
+          "id": "root",
+          "label": "Root",
+          "description": "Prevents normal movement and restricts certain movement abilities.",
+          "color": "208,166,123"
+        },
+        {
+          "id": "movement-slow",
+          "label": "Movement Slow",
+          "description": "Reduces an enemy’s movement speed.",
+          "color": "208,166,123"
+        },
+        {
+          "id": "attack-speed-slow",
+          "label": "Attack Speed Slow",
+          "description": "Reduces an enemy’s attack speed.",
+          "color": "208,166,123"
+        },
+        {
+          "id": "hex",
+          "label": "Hex",
+          "description": "Transforms an enemy, restricting attacks, spells and item use.",
+          "color": "208,166,123"
+        },
+        {
+          "id": "disarm",
+          "label": "Disarm",
+          "description": "Prevents a target from performing normal attacks.",
+          "color": "208,166,123"
+        },
+        {
+          "id": "break",
+          "label": "Break",
+          "description": "Temporarily disables most passive hero abilities.",
+          "color": "208,166,123"
+        },
+        {
+          "id": "mana-burn",
+          "label": "Mana Burn",
+          "description": "Removes enemy mana, often dealing damage as well.",
+          "color": "208,166,123"
+        },
+        {
+          "id": "healing-reduction",
+          "label": "Healing Reduction",
+          "description": "Reduces enemy healing or health restoration.",
+          "color": "208,166,123"
+        },
+        {
+          "id": "enemy-buff-dispel",
+          "label": "Enemy Buff Dispel",
+          "description": "Removes eligible positive buffs from enemies; this is not a defensive dispel.",
+          "color": "208,166,123"
+        }
+      ]
+    },
+    {
+      "name": "Team Utility & Economy",
+      "color": "128,186,171",
+      "tags": [
+        {
+          "id": "vision",
+          "label": "Vision",
+          "description": "Provides vision or reveals information about an area.",
+          "color": "128,186,171"
+        },
+        {
+          "id": "invisibility-detection",
+          "label": "Invisibility Detection",
+          "description": "Reveals invisible units or wards under the effect’s conditions.",
+          "color": "128,186,171"
+        },
+        {
+          "id": "ally-save",
+          "label": "Ally Save",
+          "description": "Provides a defensive tool for protecting or rescuing an ally.",
+          "color": "128,186,171"
+        },
+        {
+          "id": "team-armor",
+          "label": "Team Armor",
+          "description": "Grants armor to allies through an aura or targeted effect.",
+          "color": "128,186,171"
+        },
+        {
+          "id": "team-magic-protection",
+          "label": "Team Magic Protection",
+          "description": "Protects allies from magical damage through resistance or barriers.",
+          "color": "128,186,171"
+        },
+        {
+          "id": "team-healing",
+          "label": "Team Healing",
+          "description": "Restores allied health through an area effect or aura.",
+          "color": "128,186,171"
+        },
+        {
+          "id": "team-attack-buffs",
+          "label": "Team Attack Buffs",
+          "description": "Improves allied attacks through damage or attack-speed effects.",
+          "color": "128,186,171"
+        },
+        {
+          "id": "wave-clear",
+          "label": "Wave Clear",
+          "description": "Helps clear groups of creeps through area or multi-target damage.",
+          "color": "128,186,171"
+        },
+        {
+          "id": "farming-speed",
+          "label": "Farming Speed",
+          "description": "Accelerates creep farming through extra creep damage, area damage or conversion.",
+          "color": "128,186,171"
+        },
+        {
+          "id": "summons-controlled-units",
+          "label": "Summons / Controlled Units",
+          "description": "Creates or controls additional units, including illusions.",
+          "color": "128,186,171"
+        },
+        {
+          "id": "bonus-gold",
+          "label": "Bonus Gold",
+          "description": "Provides extra gold or converts a creep into a gold reward.",
+          "color": "128,186,171"
+        }
+      ]
+    }
+  ],
+  "basic": [
+    {
+      "id": "max-hp",
+      "label": "Max HP",
+      "description": "Low maximum health; vulnerable to burst damage",
+      "color": "146,190,139"
+    },
+    {
+      "id": "hp-regeneration",
+      "label": "HP Regeneration",
+      "description": "Health recovery is too slow between fights",
+      "color": "146,190,139"
+    },
+    {
+      "id": "attack-lifesteal",
+      "label": "Attack Lifesteal",
+      "description": "Need health recovery through normal attacks",
+      "color": "146,190,139"
+    },
+    {
+      "id": "spell-lifesteal",
+      "label": "Spell Lifesteal",
+      "description": "Need health recovery through spell damage",
+      "color": "146,190,139"
+    },
+    {
+      "id": "instant-heal",
+      "label": "Instant Heal",
+      "description": "Immediate health recovery during combat",
+      "color": "146,190,139"
+    },
+    {
+      "id": "max-mana",
+      "label": "Max Mana",
+      "description": "Insufficient mana for a full spell combination",
+      "color": "133,176,218"
+    },
+    {
+      "id": "mana-regeneration",
+      "label": "Mana Regeneration",
+      "description": "Running out of mana during prolonged gameplay",
+      "color": "133,176,218"
+    },
+    {
+      "id": "armor",
+      "label": "Armor",
+      "description": "Taking excessive physical damage",
+      "color": "170,181,191"
+    },
+    {
+      "id": "magic-resistance",
+      "label": "Magic Resistance",
+      "description": "Taking excessive magical damage",
+      "color": "177,152,207"
+    },
+    {
+      "id": "attack-damage",
+      "label": "Attack Damage",
+      "description": "Normal attacks deal insufficient damage",
+      "color": "207,145,140"
+    },
+    {
+      "id": "attack-speed",
+      "label": "Attack Speed",
+      "description": "Attacks are too slow",
+      "color": "207,145,140"
+    },
+    {
+      "id": "spell-amplification",
+      "label": "Spell Amplification",
+      "description": "Spells deal insufficient damage",
+      "color": "174,153,216"
+    },
+    {
+      "id": "movement-speed",
+      "label": "Movement Speed",
+      "description": "Difficulty chasing enemies or escaping",
+      "color": "130,188,199"
+    },
+    {
+      "id": "true-strike-accuracy",
+      "label": "True Strike",
+      "description": "Attacks missing due to enemy evasion",
+      "color": "207,145,140"
+    },
+    {
+      "id": "dispel",
+      "label": "Dispel",
+      "description": "A removable debuff is restricting actions",
+      "color": "177,152,207"
+    },
+    {
+      "id": "stun",
+      "label": "Stun",
+      "description": "Enemy needs to be temporarily disabled",
+      "color": "208,166,123"
+    },
+    {
+      "id": "silence",
+      "label": "Silence",
+      "description": "Enemy spells need to be interrupted or prevented",
+      "color": "208,166,123"
+    },
+    {
+      "id": "healing-reduction",
+      "label": "Healing Reduction",
+      "description": "Enemy recovering too much health",
+      "color": "208,166,123"
+    },
+    {
+      "id": "invisibility-detection",
+      "label": "Detection",
+      "description": "Invisible enemies cannot be seen",
+      "color": "128,186,171"
+    }
+  ]
+}

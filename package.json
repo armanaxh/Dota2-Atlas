@@ -1,0 +1,13 @@
+{
+  "name": "dota2-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dota 2 item statistics and graphical recipe explorer",
+  "scripts": {
+    "build": "node build.cjs",
+    "test": "node check-advanced-tags.cjs && node check-tree.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

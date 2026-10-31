@@ -1,0 +1,12 @@
+# Local archives, downloaded audit responses and former Sites identity
+.local-archive/
+.openai/
+audit/
+*.zip
+tag-coverage.json
+node_modules/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
