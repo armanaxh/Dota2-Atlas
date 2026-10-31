@@ -11,4 +11,4 @@
 .tree-card .node-status{display:block;font-size:11px;line-height:1.35;margin-top:8px}.node-stats strong{font-weight:700;color:#edf7f1}
 
 
-.item-tree-link{display:inline-block;padding:9px 14px;border:1px solid #789080;border-radius:4px;background:#2c4238;color:#e3eee7;text-decoration:none;font-weight:700}.item-tree-link:hover,.item-tree-link:focus-visible{background:#3b584a;border-color:#b0d0bb}
+.item-tree-link{font-size:12px;font-weight:400;color:#a8bdcc;text-decoration:none}.item-tree-link:hover,.item-tree-link:focus-visible{color:#e3eee7;text-decoration:underline}
