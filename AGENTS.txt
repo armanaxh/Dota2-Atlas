@@ -1,0 +1,5 @@
+Agent handover for Dota2 Atlas
+
+Read AGENTS.md in this directory. It is the canonical agent guide and contains project architecture, build/test commands, UI decisions, data provenance, deployment instructions, access rules and known follow-ups.
+
+Also read README.md and DATA-AUDIT.md. Keep the handover in AGENTS.md to avoid conflicting copies.
